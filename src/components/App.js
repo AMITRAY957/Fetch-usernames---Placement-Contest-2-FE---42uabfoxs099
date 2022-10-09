@@ -5,7 +5,7 @@ const App = () => {
  //code here
  const[name,setName]=
        useState(1);
-    const[id,setId]=useState(1)
+    const[id,setid]=useState(1)
 
  useEffect(()=>{
   fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
