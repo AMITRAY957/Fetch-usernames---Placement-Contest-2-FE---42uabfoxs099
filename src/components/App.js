@@ -10,7 +10,7 @@ const App = () => {
  useEffect(()=>{
   fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
   .then(res=>res.json())
-   .then(data)=>{
+   .then(data=>{
    
    console.log(data);
    setName(data)
@@ -31,6 +31,6 @@ const App = () => {
     </div>
   );
 }
-
+export default App;
 
 
