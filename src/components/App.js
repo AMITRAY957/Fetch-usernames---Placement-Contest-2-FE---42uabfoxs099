@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const App = () => {
  //code here
  const[name,setName]=
-       useState([]);
+       useState(1);
     const[id,setId]=useState(1)
 
  useEffect(()=>{
