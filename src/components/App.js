@@ -3,8 +3,8 @@ import '../styles/App.css';
 import { useState, useEffect } from 'react';
 const App = () => {
  //code here
- const[name,setName]=
-       useState([]);
+ const[name,setName]=useState([]);
+       
     const[id,setid]=useState(1);
 
  useEffect(()=>{
@@ -12,8 +12,8 @@ const App = () => {
   .then(res=>res.json())
    .then(data)=>{
    
-   console.log(data.name);
-   setName(data.name)
+   console.log(data);
+   setName(data)
   })
  },[id])
  const changeInput=(e)=>{
