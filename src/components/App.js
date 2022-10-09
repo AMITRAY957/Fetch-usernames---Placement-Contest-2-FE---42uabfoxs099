@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import '../styles/App.css';
 import { useState, useEffect } from 'react';
 const App = () => {
  //code here
  const[name,setName]=
-       useState(1);
-    const[id,setid]=useState(1)
+       useState([]);
+    const[id,setid]=useState(1);
 
  useEffect(()=>{
   fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
